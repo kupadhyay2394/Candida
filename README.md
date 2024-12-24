@@ -4,7 +4,7 @@ This is a web application that allows users to view a list of candidates, filter
 
 ## Live Demo
 
-- **Frontend**: [View the live frontend](https://candidatelist.netlify.app/)
+- **Frontend**: [Access the frontend](https://candidatelist.netlify.app/)
 - **Backend API**: [Access the backend API](https://candidatelistnode.onrender.com/api/candidates)
 
 ---
@@ -96,9 +96,6 @@ Example response:
 Frontend: Deployed on Netlify.
 
 Backend: Deployed on Render.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
