@@ -12,7 +12,7 @@ const App = () => {
   // Function to fetch data from the server
   const fetchCandidates = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/candidates');
+      const response = await fetch('https://candidatelistnode.onrender.com/api/candidates');
       if (!response.ok) {
         throw new Error('Failed to fetch candidates');
       }
