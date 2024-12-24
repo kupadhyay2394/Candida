@@ -1,102 +1,108 @@
-Candidate Management System
-A web-based application that allows users to manage and filter a list of candidates for various positions. The application consists of a backend API that serves candidate data and a frontend interface for displaying and filtering the candidates based on name, skills, and experience.
+# Candidate List Web Application
 
-Key Features
-Frontend Interface: A user-friendly React application for displaying candidate details.
-Search and Filter: Users can search and filter candidates by name or skills.
-Backend API: The backend exposes an API for fetching candidate data in JSON format.
-Responsive UI: The UI adapts to various screen sizes, making it suitable for both desktop and mobile devices.
-Live Demo
-Frontend: https://candidatelist.netlify.app/
-Backend API: https://candidatelistnode.onrender.com/api/candidates
-Project Structure
-This project is split into two repositories:
+This is a web application that allows users to view a list of candidates, filter them by name or skills, and see their experience details. The project is built with a React frontend and a Node.js backend API. It uses a mock list of candidates for demonstration purposes.
 
-Frontend - React-based UI
-Backend - Node.js/Express API
-Frontend Repository
-The frontend is a React application that fetches data from the backend API and displays the list of candidates with the option to filter by name or skills.
+## Live Demo
 
-Frontend Repository: Frontend GitHub Repository
-Setup Instructions
-Clone the frontend repository:
-git clone https://github.com/your-username/candidate-list-frontend.git
-cd candidate-list-frontend
+- **Frontend**: [View the live frontend](https://candidatelist.netlify.app/)
+- **Backend API**: [Access the backend API](https://candidatelistnode.onrender.com/api/candidates)
 
-Install the required dependencies:
-npm install
+---
 
-Start the React development server:
-npm run dev
+## Features
 
+- **Frontend**:
+  - Displays a list of candidates with their name, skills, and years of experience.
+  - Allows users to filter candidates by name or skills through a search bar.
+  - Fully responsive and mobile-friendly design.
 
-Visit the app in your browser at http://localhost:3000.
-Backend Repository
-The backend is a Node.js/Express server that serves a hardcoded list of candidates. It exposes a simple API endpoint to fetch the list of candidates.
+- **Backend**:
+  - A RESTful API that returns a static list of candidates.
+  - Provides a simple endpoint (`/api/candidates`) to fetch the list of candidates.
 
-Backend Repository: Backend GitHub Repository
-Setup Instructions
-Clone the backend repository:
+---
 
-bash
-Copy code
-git clone https://github.com/your-username/candidate-list-backend.git
-cd candidate-list-backend
-Install the required dependencies:
+## Technologies Used
 
-bash
-Copy code
-npm install
-Start the backend server:
+- **Frontend**: 
+  - React.js
+  - Vite (for fast builds and hot-reloading)
+  - CSS for styling
+- **Backend**: 
+  - Node.js
+  - Express.js
+  - CORS (Cross-Origin Resource Sharing)
 
-bash
-Copy code
-npm run dev
-The backend will be available at http://localhost:10000/api/candidates.
+---
 
-API Endpoint
-The backend exposes the following endpoint:
+## Installation
 
-GET /api/candidates: Returns a list of candidates.
-Example Response:
-json
-Copy code
-[
-  {
+### Frontend
+
+1. Clone the frontend repository:
+   ```bash
+   git clone https://github.com/your-username/candidate-list-frontend.git
+   cd candidate-list-frontend
+2. Install dependencies:
+   ```bash
+   npm init
+
+4. Start the development server:
+   ```bash
+   npm run dev
+
+   
+Open your browser and go to  [open browser](http://localhost:3000) to see the app in action.
+
+## Backend
+1. Clone the backend repository:
+   ```bash
+   git clone https://github.com/your-username/candidate-list-backend.git
+   cd candidate-list-backend
+   
+2. Install dependencies:
+   ```bash
+   npm install
+   
+3. Start the backend server:
+   ```bash
+   nmp run dev
+
+The backend API will be available at http://localhost:10000/api/candidates.
+
+## API Endpoints
+
+GET /api/candidates: Returns a list of candidates in JSON format.
+
+Example response:
+   ```json
+   [
+     {
     "id": 1,
     "name": "John Doe",
     "skills": "React, Node.js",
     "experience": 5
   },
-  ...
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "skills": "Python, Django",
+    "experience": 3
+  },
 ]
-Technologies Used
-Frontend: React.js, Vite
-Backend: Node.js, Express.js, CORS
-Deployment:
-Frontend: Netlify
-Backend: Render
-Development Setup
-Frontend
-Navigate to the frontend directory.
-Run the following to install dependencies:
+```
 
-npm install
+## Deployment
+Frontend: Deployed on Netlify.
 
+Backend: Deployed on Render.
 
-Start the development server:
-npm run dev
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Backend
-Navigate to the backend directory.
-Run the following to install dependencies:
-npm install
+## Contributing
 
-Start the backend server:
-npm run dev
-Contributing
-Feel free to fork the repository, open issues, and submit pull requests. Contributions are welcome!
+Feel free to fork the repository, open issues, and submit pull requests. Contributions are always welcome!
 
-Authors
+## Authors
 Your Name - kupadhyay2394
-
